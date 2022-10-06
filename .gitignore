@@ -3,5 +3,5 @@ for_delete/
 .idea/
 .vscode/
 node_modules/
-DS_Store
-readmy
+DS_Store/
+readmy/

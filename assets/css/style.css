@@ -44,8 +44,7 @@ body {
   display: flex;
   height: inherit;
   align-items: center;
-  translate: -100%;
-  animation: slider-do 40s linear infinite;
+  animation: slider-do 30s linear infinite;
 }
 .slider__item {
   height: inherit;
@@ -54,15 +53,9 @@ body {
 }
 @keyframes slider-do {
   0% {
-    translate: 0;
-    transform: scaleY(0.8);
-  }
-
-  50% {
-    transform: scaleY(1.5);
+    transform: translateX(0);
   }
   100% {
-    translate: -100%;
-    transform: scaleY(0.8);
+    transform: translateX(-100%);
   }
 }
