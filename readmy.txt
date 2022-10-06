@@ -1,0 +1,55 @@
+git config
+
+git init
+
+git status
+
+git status --untracked-files=all    ---- проверка и вложенных файлов
+
+git add index.html   --- подготовить файл index.html
+
+git add .    --- подготовить все файлы
+
+git rm --cached <имя файла>   --- отмена подготовки файла
+
+git commit -m "initial commit"  -- создание commit с "примечанием"
+
+git commit -a -m "initial commit"  --- подготовка и создание коммита
+
+git add . && git commit -m "update commit"  --- подготовки и commit последовательно
+
+git log
+
+git commit --amend -m "message"  -- апдейт commita последнего
+
+git reset --soft HEAD^   --- удаление commit без изменения данных в файлах
+
+git reset --soft HEAD   --- удаление commit с изменением данных в файлах
+
+git reset --soft HEAD~2   --- удаление commit  с изменением данных в файлах по номеру
+
+git reset --hard HEAD^   --- удаление commit  с изменением данных в файлах  в последнем
+
+git reset --hard HEAD~2   --- удаление commit  с изменением данных в файлах по номеру
+
+git log --pretty=format:"%h - %an, %ar - %s"
+
+git checkout <commit hash>  --- переход на комит с номером  <commit hash>
+
+git branch -v    ---  просмотр версий и выдает номер
+
+git checkout -b test  ---создание новой ветки <test>  с переходом на нее
+
+git merge <откуда = ветка > -- слияние ветки мастер в текущую (!!!! не стоит слияние делать в master пока не будет отлажена)
+
+git push -u origin master
+
+git remote   ---
+
+git remote -v  ----
+
+git remote add origin <url>
+
+git clone <url>
+
+git pull   (fetch+merge)
